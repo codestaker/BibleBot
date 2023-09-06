@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bible Search Results</title>
+</head>
+<body>
+    <h1>Bible Search Results</h1>
+    {% if verses %}
+        {% for verse in verses %}
+            <p>{{ verse[0] }}: {{ verse[1] }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No matching Bible verses found</p>
+    {% endif %}
+</body>
+</html>
